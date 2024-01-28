@@ -23,9 +23,9 @@ describe('Hash table insert with hash collisions', () => {
     expect(hashTable.capacity).to.equal(2);
     expect(hashTable.data.length).to.equal(2);
 
-    const pairC = hashTable.data[0];
+    const pairA = hashTable.data[0];
     const pairB = hashTable.data[1];
-    const pairA = hashTable.data[0].next;
+    const pairC = hashTable.data[0].next;
 
     expect(pairA.key).to.equal("key-1");
     expect(pairA.value).to.equal("val-1");
